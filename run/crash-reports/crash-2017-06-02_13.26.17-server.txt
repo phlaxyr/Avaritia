@@ -1,0 +1,55 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 6/2/17 1:26 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	compatlayer : [0.1.6,)
+
+net.minecraftforge.fml.common.MissingModsException: Mod theoneprobe (The One Probe) requires [compatlayer@[0.1.6,)]
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:266)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:536)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:328)
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:124)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_112, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 775028168 bytes (739 MB) / 954204160 bytes (910 MB) up to 3795845120 bytes (3620 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.32 Powered by Forge 12.18.3.2297 13 mods loaded, 13 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	U	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	U	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2297-PROJECT(1.10.2 Full Port).jar) 
+	U	Forge{12.18.3.2297} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2297-PROJECT(1.10.2 Full Port).jar) 
+	U	avaritia{${mod_version}} [Avaritia] (1.10.2 Full Port) 
+	U	CodeChickenLib{2.5.8.255} [CodeChicken Lib] (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar) 
+	U	ccl-entityhook{1.0} [ccl-entityhook] (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar) 
+	U	JEI{3.14.7.419} [Just Enough Items] (jei_1.10.2-3.14.7.419.jar) 
+	U	tconstruct{1.10.2-2.6.1.468} [Tinkers' Construct] (TConstruct-1.10.2-2.6.1.468.jar) 
+	U	mantle{1.10.2-1.1.3.199} [Mantle] (Mantle-1.10.2-1.1.3.199.jar) 
+	U	theoneprobe{1.4.7} [The One Probe] (TheOneProbe-1.1x-1.4.7-57.jar) 
+	U	forestry{5.2.17.376} [Forestry] (forestry_1.10.2-5.2.17.376.jar) 
+	U	draconicevolution{2.0.8} [Draconic Evolution] (Draconic-Evolution-1.10.2-2.0.8.177-deobf.jar) 
+	U	brandonscore{2.1.4} [Brandon's Core] (BrandonsCore-1.10.2-2.1.4.95-deobf.jar) 
+	Loaded coremods (and transformers): 
+CCLCorePlugin (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar)
+  codechicken.lib.asm.ClassHeirachyManager
+  codechicken.lib.asm.CCL_ASMTransformer
+Brandon's Core (BrandonsCore-1.10.2-2.1.4.95-deobf.jar)
+  com.brandon3055.brandonscore.asm.ClassTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

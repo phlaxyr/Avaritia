@@ -1,0 +1,417 @@
+// class version 50.0 (50)
+// access flags 0x4031
+// signature Ljava/lang/Enum<Lnet/minecraft/enchantment/EnumEnchantmentType;>;
+// declaration: net/minecraft/enchantment/EnumEnchantmentType extends java.lang.Enum<net.minecraft.enchantment.EnumEnchantmentType>
+public final enum net/minecraft/enchantment/EnumEnchantmentType extends java/lang/Enum  {
+
+  // compiled from: EnumEnchantmentType.java
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ALL
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ARMOR
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ARMOR_FEET
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ARMOR_LEGS
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ARMOR_CHEST
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; ARMOR_HEAD
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; WEAPON
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; DIGGER
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; FISHING_ROD
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; BREAKABLE
+
+  // access flags 0x4019
+  public final static enum Lnet/minecraft/enchantment/EnumEnchantmentType; BOW
+
+  // access flags 0x101A
+  private final static synthetic [Lnet/minecraft/enchantment/EnumEnchantmentType; $VALUES
+
+  // access flags 0x9
+  public static values()[Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L0
+    LINENUMBER 11 L0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.$VALUES : [Lnet/minecraft/enchantment/EnumEnchantmentType;
+    INVOKEVIRTUAL [Lnet/minecraft/enchantment/EnumEnchantmentType;.clone ()Ljava/lang/Object;
+    CHECKCAST [Lnet/minecraft/enchantment/EnumEnchantmentType;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 0
+
+  // access flags 0x9
+  public static valueOf(Ljava/lang/String;)Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L0
+    LINENUMBER 11 L0
+    LDC Lnet/minecraft/enchantment/EnumEnchantmentType;.class
+    ALOAD 0
+    INVOKESTATIC java/lang/Enum.valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    CHECKCAST net/minecraft/enchantment/EnumEnchantmentType
+    ARETURN
+   L1
+    LOCALVARIABLE name Ljava/lang/String; L0 L1 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x2
+  // signature ()V
+  // declaration: void <init>()
+  private <init>(Ljava/lang/String;I)V
+   L0
+    LINENUMBER 11 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESPECIAL java/lang/Enum.<init> (Ljava/lang/String;I)V
+    RETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/enchantment/EnumEnchantmentType; L0 L1 0
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public canEnchantItem(Lnet/minecraft/item/Item;)Z
+    ALOAD 1
+    INSTANCEOF com/brandon3055/brandonscore/asm/IEnchantmentOverride
+    IFEQ L0
+    ALOAD 1
+    ALOAD 0
+    INVOKEINTERFACE com/brandon3055/brandonscore/asm/IEnchantmentOverride.checkEnchantTypeValid (Lnet/minecraft/enchantment/EnumEnchantmentType;)Z
+    IRETURN
+   L0
+    LINENUMBER 30 L0
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ALL : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L1
+   L2
+    LINENUMBER 32 L2
+    ICONST_1
+    IRETURN
+   L1
+    LINENUMBER 34 L1
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.BREAKABLE : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L3
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/item/Item.isDamageable ()Z
+    IFEQ L3
+   L4
+    LINENUMBER 36 L4
+    ICONST_1
+    IRETURN
+   L3
+    LINENUMBER 38 L3
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/item/ItemArmor
+    IFEQ L5
+   L6
+    LINENUMBER 40 L6
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L7
+   L8
+    LINENUMBER 42 L8
+    ICONST_1
+    IRETURN
+   L7
+    LINENUMBER 46 L7
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    CHECKCAST net/minecraft/item/ItemArmor
+    ASTORE 2
+   L9
+    LINENUMBER 47 L9
+    ALOAD 2
+    GETFIELD net/minecraft/item/ItemArmor.armorType : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    GETSTATIC net/minecraft/inventory/EntityEquipmentSlot.HEAD : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    IF_ACMPNE L10
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_HEAD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L11
+    ICONST_1
+    GOTO L12
+   L11
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ICONST_0
+    GOTO L12
+   L10
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ALOAD 2
+    GETFIELD net/minecraft/item/ItemArmor.armorType : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    GETSTATIC net/minecraft/inventory/EntityEquipmentSlot.LEGS : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    IF_ACMPNE L13
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_LEGS : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L14
+    ICONST_1
+    GOTO L12
+   L14
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ICONST_0
+    GOTO L12
+   L13
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ALOAD 2
+    GETFIELD net/minecraft/item/ItemArmor.armorType : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    GETSTATIC net/minecraft/inventory/EntityEquipmentSlot.CHEST : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    IF_ACMPNE L15
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_CHEST : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L16
+    ICONST_1
+    GOTO L12
+   L16
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ICONST_0
+    GOTO L12
+   L15
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ALOAD 2
+    GETFIELD net/minecraft/item/ItemArmor.armorType : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    GETSTATIC net/minecraft/inventory/EntityEquipmentSlot.FEET : Lnet/minecraft/inventory/EntityEquipmentSlot;
+    IF_ACMPNE L17
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_FEET : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L18
+    ICONST_1
+    GOTO L12
+   L18
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ICONST_0
+    GOTO L12
+   L17
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] []
+    ICONST_0
+   L12
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item net/minecraft/item/ItemArmor] [I]
+    IRETURN
+   L5
+    LINENUMBER 52 L5
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/item/ItemSword
+    IFEQ L19
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.WEAPON : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L20
+    ICONST_1
+    GOTO L21
+   L20
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ICONST_0
+    GOTO L21
+   L19
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/item/ItemTool
+    IFEQ L22
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.DIGGER : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L23
+    ICONST_1
+    GOTO L21
+   L23
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ICONST_0
+    GOTO L21
+   L22
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/item/ItemBow
+    IFEQ L24
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.BOW : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L25
+    ICONST_1
+    GOTO L21
+   L25
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ICONST_0
+    GOTO L21
+   L24
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/item/ItemFishingRod
+    IFEQ L26
+    ALOAD 0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.FISHING_ROD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    IF_ACMPNE L27
+    ICONST_1
+    GOTO L21
+   L27
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ICONST_0
+    GOTO L21
+   L26
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] []
+    ICONST_0
+   L21
+   FRAME FULL [net/minecraft/enchantment/EnumEnchantmentType net/minecraft/item/Item] [I]
+    IRETURN
+   L28
+    LOCALVARIABLE itemarmor Lnet/minecraft/item/ItemArmor; L9 L5 2
+    LOCALVARIABLE this Lnet/minecraft/enchantment/EnumEnchantmentType; L0 L28 0
+    LOCALVARIABLE itemIn Lnet/minecraft/item/Item; L0 L28 1
+    MAXSTACK = 2
+    MAXLOCALS = 3
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 13 L0
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ALL"
+    ICONST_0
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ALL : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L1
+    LINENUMBER 14 L1
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ARMOR"
+    ICONST_1
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L2
+    LINENUMBER 15 L2
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ARMOR_FEET"
+    ICONST_2
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_FEET : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L3
+    LINENUMBER 16 L3
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ARMOR_LEGS"
+    ICONST_3
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_LEGS : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L4
+    LINENUMBER 17 L4
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ARMOR_CHEST"
+    ICONST_4
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_CHEST : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L5
+    LINENUMBER 18 L5
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "ARMOR_HEAD"
+    ICONST_5
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_HEAD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L6
+    LINENUMBER 19 L6
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "WEAPON"
+    BIPUSH 6
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.WEAPON : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L7
+    LINENUMBER 20 L7
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "DIGGER"
+    BIPUSH 7
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.DIGGER : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L8
+    LINENUMBER 21 L8
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "FISHING_ROD"
+    BIPUSH 8
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.FISHING_ROD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L9
+    LINENUMBER 22 L9
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "BREAKABLE"
+    BIPUSH 9
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.BREAKABLE : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L10
+    LINENUMBER 23 L10
+    NEW net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    LDC "BOW"
+    BIPUSH 10
+    INVOKESPECIAL net/minecraft/enchantment/EnumEnchantmentType.<init> (Ljava/lang/String;I)V
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.BOW : Lnet/minecraft/enchantment/EnumEnchantmentType;
+   L11
+    LINENUMBER 11 L11
+    BIPUSH 11
+    ANEWARRAY net/minecraft/enchantment/EnumEnchantmentType
+    DUP
+    ICONST_0
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ALL : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    ICONST_1
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    ICONST_2
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_FEET : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    ICONST_3
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_LEGS : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    ICONST_4
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_CHEST : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    ICONST_5
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.ARMOR_HEAD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    BIPUSH 6
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.WEAPON : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    BIPUSH 7
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.DIGGER : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    BIPUSH 8
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.FISHING_ROD : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    BIPUSH 9
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.BREAKABLE : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    DUP
+    BIPUSH 10
+    GETSTATIC net/minecraft/enchantment/EnumEnchantmentType.BOW : Lnet/minecraft/enchantment/EnumEnchantmentType;
+    AASTORE
+    PUTSTATIC net/minecraft/enchantment/EnumEnchantmentType.$VALUES : [Lnet/minecraft/enchantment/EnumEnchantmentType;
+    RETURN
+    MAXSTACK = 4
+    MAXLOCALS = 0
+}

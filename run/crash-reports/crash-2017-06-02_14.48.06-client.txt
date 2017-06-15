@@ -1,0 +1,200 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  CCLCorePlugin (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar)
+  EnderCorePlugin (EnderCore-1.10.2-0.4.1.66-beta.jar)
+  Brandon's Core (BrandonsCore-1.10.2-2.1.4.95-deobf.jar)
+  CoFH Loading Plugin (CoFHCore-1.10.2-4.1.1.156-universal.jar)
+Contact their authors BEFORE contacting forge
+
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 6/2/17 2:48 PM
+Description: Rendering screen
+
+java.lang.NullPointerException: Rendering screen
+	at morph.avaritia.client.gui.GUINeutroniumCompressor.drawGuiContainerForegroundLayer(GUINeutroniumCompressor.java:53)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:132)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:382)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1147)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1139)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:406)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at morph.avaritia.client.gui.GUINeutroniumCompressor.drawGuiContainerForegroundLayer(GUINeutroniumCompressor.java:53)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:132)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:382)
+
+-- Screen render details --
+Details:
+	Screen name: morph.avaritia.client.gui.GUINeutroniumCompressor
+	Mouse location: Scaled: (480, 264). Absolute: (960, 528)
+	Screen size: Scaled: (960, 529). Absolute: (1920, 1057). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player918'/400, l='MpServer', x=30.93, y=74.00, z=234.29]]
+	Chunk stats: MultiplayerChunkCache: 511, 511
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (28,64,252), Chunk: (at 12,4,12 in 1,15; contains blocks 16,0,240 to 31,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 15646 game time, 15646 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 65 total; [EntitySpider['Spider'/128, l='MpServer', x=-35.50, y=72.00, z=243.50], EntityZombie['Zombie'/898, l='MpServer', x=95.35, y=68.00, z=209.35], EntityZombie['entity.Zombie.name'/771, l='MpServer', x=-19.50, y=19.00, z=222.50], EntityChicken['Chicken'/260, l='MpServer', x=88.50, y=69.00, z=264.50], EntityChicken['Chicken'/261, l='MpServer', x=92.50, y=69.00, z=264.50], EntityChicken['Chicken'/262, l='MpServer', x=91.69, y=69.00, z=267.33], EntityChicken['Chicken'/263, l='MpServer', x=95.13, y=69.00, z=269.37], EntityItem['item.item.egg'/264, l='MpServer', x=89.40, y=69.00, z=263.64], EntityBat['Bat'/1288, l='MpServer', x=-23.09, y=18.58, z=217.54], EntityItem['item.item.egg'/265, l='MpServer', x=94.52, y=69.00, z=269.60], EntityItem['item.item.egg'/266, l='MpServer', x=90.79, y=69.00, z=267.53], EntityChicken['Chicken'/138, l='MpServer', x=-16.48, y=68.00, z=156.16], EntityBat['Bat'/1290, l='MpServer', x=-26.32, y=17.04, z=221.49], EntityBat['Bat'/267, l='MpServer', x=103.42, y=26.05, z=296.57], EntityBat['Bat'/783, l='MpServer', x=-5.78, y=40.09, z=258.76], EntityBat['Bat'/144, l='MpServer', x=6.35, y=15.96, z=182.01], EntityPlayerSP['Player918'/400, l='MpServer', x=30.93, y=74.00, z=234.29], EntityBat['Bat'/280, l='MpServer', x=97.25, y=14.10, z=176.75], EntityBat['Bat'/920, l='MpServer', x=-31.48, y=16.87, z=199.55], EntityBat['Bat'/1433, l='MpServer', x=-1.74, y=33.70, z=305.22], EntityCreeper['Creeper'/1052, l='MpServer', x=93.50, y=68.00, z=213.50], EntityBat['Bat'/284, l='MpServer', x=109.34, y=32.23, z=301.75], EntitySpider['Spider'/158, l='MpServer', x=-10.50, y=70.00, z=178.50], EntitySkeleton['Skeleton'/160, l='MpServer', x=-8.50, y=70.00, z=178.50], EntityChicken['Chicken'/161, l='MpServer', x=-5.13, y=74.00, z=208.50], EntityChicken['Chicken'/162, l='MpServer', x=-4.41, y=73.00, z=207.83], EntityItem['item.item.egg'/163, l='MpServer', x=-1.31, y=75.00, z=216.91], EntitySkeleton['Skeleton'/675, l='MpServer', x=76.50, y=70.00, z=192.50], EntityBat['Bat'/1443, l='MpServer', x=-23.84, y=17.12, z=218.36], EntityItem['item.item.egg'/164, l='MpServer', x=-3.09, y=73.00, z=209.25], EntityBat['Bat'/1445, l='MpServer', x=-26.77, y=18.11, z=211.16], EntityBat['Bat'/1446, l='MpServer', x=-21.95, y=17.04, z=216.65], EntityZombie['Zombie'/935, l='MpServer', x=-33.48, y=61.00, z=167.73], EntitySkeleton['Skeleton'/1193, l='MpServer', x=71.50, y=71.00, z=222.50], EntitySkeleton['Skeleton'/1198, l='MpServer', x=-46.50, y=14.00, z=206.50], EntityEnderman['Enderman'/1326, l='MpServer', x=63.73, y=71.00, z=289.63], EntityCreeper['Creeper'/1200, l='MpServer', x=-33.50, y=27.00, z=243.50], EntitySkeleton['Skeleton'/1329, l='MpServer', x=68.64, y=71.00, z=289.79], EntityChicken['Chicken'/181, l='MpServer', x=3.51, y=75.00, z=216.11], EntityChicken['Chicken'/182, l='MpServer', x=3.18, y=73.00, z=210.57], EntitySkeleton['Skeleton'/184, l='MpServer', x=13.50, y=22.00, z=262.50], EntityZombie['Zombie'/954, l='MpServer', x=-33.50, y=18.00, z=216.50], EntityZombie['Zombie'/955, l='MpServer', x=-27.50, y=18.00, z=224.70], EntityBat['Bat'/1083, l='MpServer', x=-25.25, y=16.10, z=204.25], EntityZombie['Zombie'/956, l='MpServer', x=-28.23, y=17.00, z=223.40], EntitySpider['Spider'/831, l='MpServer', x=80.50, y=68.00, z=157.50], EntityEnderman['Enderman'/1218, l='MpServer', x=-18.50, y=70.00, z=267.50], EntityEnderman['Enderman'/835, l='MpServer', x=-1.50, y=70.00, z=180.50], EntitySkeleton['Skeleton'/1097, l='MpServer', x=95.50, y=14.00, z=189.50], EntityCreeper['Creeper'/1098, l='MpServer', x=95.50, y=14.00, z=188.50], EntityZombie['Zombie'/849, l='MpServer', x=-15.27, y=70.00, z=175.42], EntityBat['Bat'/977, l='MpServer', x=28.10, y=21.10, z=235.91], EntitySpider['Spider'/850, l='MpServer', x=-3.50, y=70.00, z=172.50], EntityZombie['Zombie'/1108, l='MpServer', x=-36.29, y=73.00, z=198.76], EntitySpider['Spider'/229, l='MpServer', x=73.57, y=68.00, z=161.80], EntitySheep['Sheep'/230, l='MpServer', x=76.80, y=69.00, z=179.59], EntityBat['Bat'/888, l='MpServer', x=-26.57, y=42.64, z=212.19], EntityWitch['Witch'/122, l='MpServer', x=-38.50, y=16.00, z=231.50], EntityZombie['Zombie'/1019, l='MpServer', x=17.75, y=72.00, z=158.25], EntityChicken['Chicken'/124, l='MpServer', x=-46.50, y=72.00, z=230.16], EntityChicken['Chicken'/125, l='MpServer', x=-47.50, y=72.00, z=227.50], EntitySheep['Sheep'/253, l='MpServer', x=88.50, y=68.00, z=179.50], EntityChicken['Chicken'/126, l='MpServer', x=-29.08, y=73.00, z=225.51], EntitySheep['Sheep'/254, l='MpServer', x=92.48, y=67.00, z=183.23], EntitySheep['Sheep'/255, l='MpServer', x=87.68, y=68.00, z=181.19]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:456)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2779)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:427)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_112, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 840913032 bytes (801 MB) / 2669150208 bytes (2545 MB) up to 3795845120 bytes (3620 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 98
+	FML: MCP 9.32 Powered by Forge 12.18.3.2297 22 mods loaded, 22 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2297-PROJECT(1.10.2 Full Port).jar) 
+	UCHIJAAAA	Forge{12.18.3.2297} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2297-PROJECT(1.10.2 Full Port).jar) 
+	UCHIJAAAA	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJAAAA	ccl-entityhook{1.0} [ccl-entityhook] (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar) 
+	UCHIJAAAA	CodeChickenLib{2.5.8.255} [CodeChicken Lib] (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar) 
+	UCHIJAAAA	avaritia{${mod_version}} [Avaritia] (1.10.2 Full Port) 
+	UCHIJAAAA	JEI{3.14.7.419} [Just Enough Items] (jei_1.10.2-3.14.7.419.jar) 
+	UCHIJAAAA	mantle{1.10.2-1.1.3.199} [Mantle] (Mantle-1.10.2-1.1.3.199.jar) 
+	UCHIJAAAA	tconstruct{1.10.2-2.6.1.468} [Tinkers' Construct] (TConstruct-1.10.2-2.6.1.468.jar) 
+	UCHIJAAAA	cofhcore{4.1.1} [CoFH Core] (CoFHCore-1.10.2-4.1.1.156-universal.jar) 
+	UCHIJAAAA	theoneprobe{1.4.7} [The One Probe] (TheOneProbe-1.1x-1.4.7-57.jar) 
+	UCHIJAAAA	forestry{5.2.17.376} [Forestry] (forestry_1.10.2-5.2.17.376.jar) 
+	UCHIJAAAA	brandonscore{2.1.4} [Brandon's Core] (BrandonsCore-1.10.2-2.1.4.95-deobf.jar) 
+	UCHIJAAAA	draconicevolution{2.0.8} [Draconic Evolution] (Draconic-Evolution-1.10.2-2.0.8.177-deobf.jar) 
+	UCHIJAAAA	CodeChickenCore{2.4.1.102} [CodeChicken Core] (CodeChickenCore-1.10.2-2.4.1.102-universal.jar) 
+	UCHIJAAAA	endercore{1.10.2-0.4.1.66-beta} [EnderCore] (EnderCore-1.10.2-0.4.1.66-beta.jar) 
+	UCHIJAAAA	EnderIO{1.10.2-3.1.186} [Ender IO] (EnderIO-1.10.2-3.1.186.jar) 
+	UCHIJAAAA	EnderStorage{2.2.1.106} [EnderStorage] (EnderStorage-1.10.2-2.2.1.106-universal.jar) 
+	UCHIJAAAA	thermalfoundation{2.0.5} [Thermal Foundation] (ThermalFoundation-1.10.2-2.0.5.81-universal.jar) 
+	UCHIJAAAA	thermaldynamics{2.0.0} [Thermal Dynamics] (ThermalDynamics-1.10.2-2.0.0.1-universal.jar) 
+	UCHIJAAAA	thermalexpansion{5.0.4} [Thermal Expansion] (ThermalExpansion-1.10.2-5.0.4.90-universal.jar) 
+	Loaded coremods (and transformers): 
+CCLCorePlugin (CodeChickenLib-1.10.2-2.5.8.255-deobf.jar)
+  codechicken.lib.asm.ClassHeirachyManager
+  codechicken.lib.asm.CCL_ASMTransformer
+EnderCorePlugin (EnderCore-1.10.2-0.4.1.66-beta.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+Brandon's Core (BrandonsCore-1.10.2-2.1.4.95-deobf.jar)
+  com.brandon3055.brandonscore.asm.ClassTransformer
+CoFH Loading Plugin (CoFHCore-1.10.2-4.1.1.156-universal.jar)
+  cofh.asm.CoFHClassTransformer
+  cofh.asm.repack.codechicken.lib.asm.ClassHierarchyManager
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 376.53' Renderer: 'GeForce GT 730/PCIe/SSE2'
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- theoneprobeIntegration (Enabled/Not Forced)
+
+	CodeChickenLib Invalid Fingerprint Reports: 
+		CodeChickenLib has an invalid fingerprint.
+	CodeChickenCore Invalid Fingerprint Reports: 
+		CodeChickenLib has an invalid fingerprint.
+	EnderIO: No known problems detected.
+	Detailed RF API diagnostics:
+                  * RF API class 'EnergyStorage' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/EnergyStorage.class
+                  * RF API class 'IEnergyConnection' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyConnection.class
+                  * RF API class 'IEnergyContainerItem' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyContainerItem.class
+                  * RF API class 'IEnergyHandler' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyHandler.class
+                  * RF API class 'IEnergyProvider' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyProvider.class
+                  * RF API class 'IEnergyReceiver' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyReceiver.class
+                  * RF API class 'IEnergyStorage' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/IEnergyStorage.class
+                  * RF API class 'ItemEnergyContainer' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/ItemEnergyContainer.class
+                  * RF API class 'TileEnergyHandler' is loaded from: jar:file:/C:/Users/Morpheus1101/.gradle/caches/modules-2/files-2.1/mcjty.theoneprobe/TheOneProbe/1.1x-1.4.7-57/e6e818c3d912f0cdff1f4d73861dbb6eaef2288c/TheOneProbe-1.1x-1.4.7-57.jar!/cofh/api/energy/TileEnergyHandler.class
+	Detailed Tesla API diagnostics:
+                  * Tesla API class 'Tesla' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.Tesla)
+                  * Tesla API class 'TeslaCapabilities' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.capability.TeslaCapabilities)
+                  * Tesla API class 'ITeslaConsumer' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.ITeslaConsumer)
+                  * Tesla API class 'ITeslaHolder' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.ITeslaHolder)
+                  * Tesla API class 'ITeslaProducer' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.ITeslaProducer)
+                  * Tesla API class 'BaseTeslaContainer' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.BaseTeslaContainer)
+                  * Tesla API class 'BaseTeslaContainerProvider' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.BaseTeslaContainerProvider)
+                  * Tesla API class 'InfiniteTeslaConsumer' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.InfiniteTeslaConsumer)
+                  * Tesla API class 'InfiniteTeslaConsumerProvider' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.InfiniteTeslaConsumerProvider)
+                  * Tesla API class 'InfiniteTeslaProducer' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.InfiniteTeslaProducer)
+                  * Tesla API class 'InfiniteTeslaProducerProvider' could not be loaded (reason: java.lang.ClassNotFoundException: net.darkhax.tesla.api.implementation.InfiniteTeslaProducerProvider)
+
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!You are looking at the diagnostics information, not at the crash. Scroll up!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	EnderStorage Invalid Fingerprint Reports: 
+		CodeChickenLib has an invalid fingerprint.
+	Launched Version: 1.10.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GT 730/PCIe/SSE2 GL version 4.5.0 NVIDIA 376.53, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-4670K CPU @ 3.40GHz

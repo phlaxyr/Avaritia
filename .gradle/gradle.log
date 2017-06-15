@@ -1,0 +1,24 @@
+Etag download for http://files.minecraftforge.net/maven/de/oceanlabs/mcp/versions.json failed with code 400Etag download for http://files.minecraftforge.net/maven/de/oceanlabs/mcp/versions.json failed with code 400
+
+Etag download for http://export.mcpbot.bspk.rs/versions.json failed with code 400Etag download for http://export.mcpbot.bspk.rs/versions.json failed with code 400
+
+Etag download for http://files.minecraftforge.net/maven/net/minecraftforge/forge/json failed with code 400Etag download for http://files.minecraftforge.net/maven/net/minecraftforge/forge/json failed with code 400
+
+1.12-14.21.0.23211.12-14.21.0.2321
+
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\Morpheus1101\Desktop\Avarita\1.12 Full Port\build.gradle' line: 79
+
+* What went wrong:
+A problem occurred evaluating root project '1.12 Full Port'.
+> No such version exists!
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 2.448 secs
